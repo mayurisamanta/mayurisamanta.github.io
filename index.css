@@ -473,9 +473,7 @@ nav {
     left: 1%;
     bottom: 10%;
   }
-  #social:hover{
-    
-  }
+
   .socicon {
     width: 2rem;
     height: 2rem;
@@ -594,9 +592,7 @@ nav {
 
 
   @media screen and (max-width: 420px) {
-    .hero img {
-      
-    }
+    
   
     .bio {
       width: 18.3rem;
