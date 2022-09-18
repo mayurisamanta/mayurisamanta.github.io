@@ -10,15 +10,16 @@
   </head>
   <body>
     <!-- Navbar -->
-    <nav>
-      <img id="logo" src="Assets/icons/namebanner.png" alt="" />
+    <nav >
+      <img id="logo" src="Assets/icons/namebanner.png" alt="Name Banner" />
       <!-- <h1>Mayuri Samanta</h1> -->
-      <ul class="navigation">
-        <li><a href="#home" class="nav-link">Home</a></li>
+      <ul class="navigation" >
+        <li><a href="#homeextra" class="nav-link">Home</a></li>
         <li><a href="#about" class="nav-link">About</a></li>
         <li><a href="#skills" class="nav-link">Skills</a></li>
         <li><a href="#projects" class="nav-link">Projects</a></li>
         <li><a href="#contact" class="nav-link">Contact</a></li>
+        <!-- <i class="uil uil-times nav__close" id="nav-close"></i> -->
       </ul>
       <button class="burger-menu" id="burger-menu">
         <ion-icon class="bars" name="menu-outline"></ion-icon>
@@ -27,10 +28,11 @@
 
     <!-- Hero Section -->
 
-    <section class="hero" id="about">
+    <div id="homeextra"></div>
+    <section id="home" class="hero" >
       <img
-        src="assets/icons/Professional Pic.jpg"
-        alt="jane-doe"
+        src="Assets/icons/Professional Pic.jpg"
+        alt="Mayuri Samanta"
         loading="lazy"
         class="hero-img"
       />
@@ -44,138 +46,196 @@
             <span class="title-word title-word-3">Backend</span>
             <span class="title-word title-word-4">Developer</span>
           </h2>
+          <!-- <button type="button">Resume</button> -->
         </div>
+        <h2 id="resume">
+          <a  href="Assets/icons/Mayuri-Samanta-Resume.pdf" download="Mayuri-Samanta-Resume">
+            Resume</a>
+        </h2>
       </div>
     </section>
 
     <!-- More about -->
 
-    <section class="more-about">
-      <h2>More About Me</h2>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis
-        nesciunt excepturi quos obcaecati incidunt voluptatem ipsam sunt ipsum,
-        autem deleniti cupiditate molestias quis unde quae totam porro dicta
-        iure animi inventore, veniam hic! Omnis nulla, delectus a voluptatibus
+    <section class="more-about" id="about">
+      <div id="aboutextra"></div>
+      <h2>All About Me & My Experience</h2>
+      <div id="details">
+      
+      <p>--> Hello, I am Mayuri Samanta. Though I am Bengali, I was born and brought up in Navsari, Gujarat.
       </p>
-      <p>
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur
-        nostrum dolor minus, libero delectus praesentium perferendis
-      </p>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero,
-        consequuntur labore? Ea totam voluptas amet!
-      </p>
+      <p>--> I recently completed my Full stack web development course from Masai School. </p>
+      <p>--> Also I did a Bachelor of Commerce in 2021 from Veed narmad south Gujarat university and did 12th and 
+        10th from the Gujarat board in the years 2018 and 2016. With my college, I also appeared for the CA foundation in 2019.</p>
+        <p>--> I worked on many projects during my Masai School journey. Some of them are clone of airship.com and
+          bestbuy.com using HTML, CSS ,javascript. 
+          In one of the projects I was assigned as team leader, There I learned how to collaborate with team members and 
+          manage the workflow in a team.</p>
+       <p>--> Apart from that I have done 1200+ hours of coding, gone through 100+ hours to develop my soft skills 
+        and done with 9-9-6 i.e 9 am to 9 pm for 6 days of the week, military-style coding curriculum in Masai School.</p>   
+
+        <p>--> Considering my family background details, My father is a goldsmith, my mother is a housewife and I have two siblings,
+          both are younger than me.</p>
+
+          <p>--> In my free time I like to listen to music and have a keen interest in Art & crafts.</p>
+        </div>
+       
     </section>
+    
 
     <!-- Skills section -->
 
     <section class="skills" id="skills">
+      <div id="aboutextra2"></div>
+      <div id="skillsextra"></div>
       <h2 class="skill-header">My Top Skills</h2>
 
       <div class="skills-wrapper">
-        <div class="first-set animate__animated animate__pulse">
+        <div class=" icon-card">
           <img
-            src="assets/icons/icons8-html-5.svg"
-            alt=""
+            src="Assets/icons/java.png"
+            alt="Java"
             loading="lazy"
-            class="icon icon-card"
+            class="icon"
           />
-          <img
-            src="assets/icons/icons8-css3.svg"
-            alt=""
-            loading="lazy"
-            class="icon icon-card"
-          />
-          <img
-            src="assets/icons/icons8-javascript.svg"
-            alt=""
-            loading="lazy"
-            class="icon icon-card"
-          />
-        </div>
+          <h2>Java</h2>
 
-        <div class="second-set animate__animated animate__pulse">
+          </div>
+          <div class=" icon-card">
+            <img
+              src="Assets/icons/mysql.png"
+              alt="My SQL"
+              loading="lazy"
+              class="icon"
+            />
+            <h2>My SQL</h2>
+  
+            </div>
+            <div class=" icon-card">
+              <img
+                src="Assets/icons/springboot.png"
+                alt="Spring Boot"
+                loading="lazy"
+                class="icon"
+              />
+              <h2>Spring Boot</h2>
+    
+              </div>
+            <div class=" icon-card">
+              <img
+                src="Assets/icons/js.png"
+                alt="Javascript"
+                loading="lazy"
+                class="icon"
+              />
+              <h2>Javascript</h2>
+    
+              </div>
+        <div class=" icon-card">
+
           <img
-            src="assets/icons/icons8-bootstrap.svg"
-            alt=""
-            loading="lazy"
-            class="icon icon-card"
-          />
-          <img
-            src="assets/icons/icons8-react-native.svg"
-            alt=""
-            loading="lazy"
-            class="icon icon-card"
-          />
-          <img
-            src="assets/icons/icons8-git.svg"
-            alt=""
-            loading="lazy"
-            class="icon icon-card"
-          />
+              src="Assets/icons/html.png"
+              alt="HTML"
+              loading="lazy"
+              class="icon"
+            />
+            <h2>HTML</h2>
         </div>
+        <div class=" icon-card">
+          <img
+            src="Assets/icons/css.png"
+            alt="CSS"
+            loading="lazy"
+            class="icon"
+          />
+          <h2>CSS</h2>
+        </div>
+          
+        <div class=" icon-card">
+          <img
+            src="Assets/icons/git.png"
+            alt="Git & Github"
+            loading="lazy"
+            class="icon"
+          />
+          <h2>Git & Github</h2>
+  
+          </div>
+          <div class=" icon-card">
+            <img
+              src="Assets/icons/dsa.png"
+              alt="Data Structure & Algorithm "
+              loading="lazy"
+              class="icon"
+            />
+            <h2>Data Structure</h2>
+            <h2>& Algorithm</h2>
+    
+            </div>
       </div>
+      </div>
+      
     </section>
 
     <!-- Projects section -->
     <section class="projects" id="projects">
+      <div id="skillextra2"></div>
+      <div id="projectextra"></div>
+
       <h2 class="projects-title">Some of my Recent Projects</h2>
       <div class="projects-container">
         <div class="project-container project-card">
           <img
-            src="assets/images/expenseTracker.png"
-            alt="expense-tracker"
+            src="Assets/icons/airship.jpg"
+            alt="Airship"
             loading="lazy"
             class="project-pic"
           />
-          <h3 class="project-title">Expense Tracker</h3>
-          <p class="project-details">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas
-            ratione vel inventore labore commodi modi quos culpa aut saepe!
-            Alias!
-          </p>
-          <a href="#" target="_blank" class="project-link">Check it Out</a>
+          <h2 class="project-title">Air ship Clone</h2>
+          <ul style="list-style-type:circle;">
+            <li>Cloned Air ship website within 6 days along with 5 aspiring developers.</li>
+            <li>Airship is revolutionizing how brands master mobile app experiences.</li>
+            <li>My responsibility was to build login and sign up page functionalities that were
+              also responsive.</li>
+              <li>As a team leader I manage the whole team.</li>
+          </ul>
+          <h4>Tech Stack - HTML | CSS | JavaScript </h4>
+          <a id="links" href="https://github.com/mayurisamanta/-dirty-surprise-9313" target="_blank" class="project-link">Source Code</a>
+          <a id="links" href="https://cool-cascaron-6523af.netlify.app/" target="_blank" class="project-link">Check it Out</a>
         </div>
         <div class="project-container project-card">
           <img
-            src="assets/images/netflixClone.png"
-            alt="netflic-clone"
+            src="Assets/icons/bestbuy.jpg"
+            alt="bestbuy"
             loading="lazy"
             class="project-pic"
           />
-          <h3 class="project-title">Netflix Clone</h3>
-          <p class="project-details">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas
-            ratione vel inventore labore commodi modi quos culpa aut saepe!
-            Alias!
-          </p>
-          <a href="#" target="_blank" class="project-link">Check it Out</a>
+          <h2 class="project-title">Best Buy Clone</h2>
+          <ul style="list-style-type:circle;">
+            <li>Cloned Air ship website within 6 days along with 5 aspiring developers.</li>
+            <li>Best Buy is a US-based e-commerce electronics retailer.</li>
+            <li>My responsibility was to build Header and Homepage with respective
+              functionalities.</li>
+          </ul>
+          <h4>Tech Stack - HTML | CSS | JavaScript  </h4>
+          <a id="links" href="https://github.com/mayurisamanta/Best-Buyers" target="_blank" class="project-link">Source Code</a>
+          <a id="links" href="https://endearing-torrone-c82abe.netlify.app/" target="_blank" class="project-link">Check it Out</a>
         </div>
-        <div class="project-container project-card">
-          <img
-            src="assets/images/greenyEarth.png"
-            alt="greeny-earth"
-            loading="lazy"
-            class="project-pic"
-          />
-          <h3 class="project-title">Greeny Earth</h3>
-          <p class="project-details">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas
-            ratione vel inventore labore commodi modi quos culpa aut saepe!
-            Alias!
-          </p>
-          <a href="#" target="_blank" class="project-link">Check it Out</a>
-        </div>
+        
       </div>
     </section>
 
     <!-- Contact section -->
     <section class="contact" id="contact">
+      <div id="contactextra"></div>
+      
+      <div id="contactextra2"></div>
+
+
       <h2>Get In Touch With Me</h2>
       <div class="contact-form-container">
         <div class="contact-form">
-          <form action="https://formspree.io/f/xyylngw" method="POST">
+          <form action="https://formspree.io/f/mpznpoyl" method="POST">
             <div class="form-control">
               <label for="name">Name</label>
               <input
@@ -194,6 +254,17 @@
                 id="email"
                 name="sender-email"
                 placeholder="Enter Your Email"
+                class="input-field"
+                required
+              />
+            </div>
+            <div class="form-control">
+              <label for="number">Number</label>
+              <input
+                type="number"
+                id="number"
+                name="sender-number"
+                placeholder="Enter Your Number"
                 class="input-field"
                 required
               />
@@ -219,12 +290,14 @@
           </form>
         </div>
       </div>
+
+      <h2 id="footer">Made by Mayuri Samanta with <img id="heart" src="Assets/icons/heart.jpg" alt=""></h2>
     </section>
 
-    <!-- Social accounts - Fixed to the right -->
+    <!-- Social accounts - Fixed to the right  -->
 
-    <!-- <div class="socials">
-      <a href="#" target="_blank"
+    <div class="socials">
+      <!-- <a href="#" target="_blank"
         ><img
           src="assets/icons/icons8-twitter-circled.gif"
           alt="Twitter"
@@ -237,46 +310,49 @@
           alt="Instagram"
           loading="lazy"
           class="socicon"
-      /></a>
-      <a href="#" target="_blank"
+      /></a> -->
+      <a href = "mailto:samantamayuri@gmail.com">
+        <img
+          src="Assets/icons/email.gif"
+          alt="Email"
+          loading="lazy"
+          class="socicon"
+      />
+        </a>
+        
+        <a href = "tel:9265353136">
+          <img
+            src="Assets/icons/call.gif"
+            alt="Phone"
+            loading="lazy"
+            class="socicon"
+        />
+          </a>
+      <a id="social" href="https://www.linkedin.com/in/mayuri-samanta/" target="_blank"
         ><img
-          src="assets/icons/icons8-linkedin-circled.gif"
+          src="Assets/icons/icons8-linkedin-circled.gif"
           alt="Linkedin"
           loading="lazy"
           class="socicon"
       /></a>
-      <a href="#" target="_blank"
-        ><img src="assets/icons/icons8-github.gif" alt="Github" class="socicon"
-      /></a> -->
+      <a id="social" href="https://www.linkedin.com/in/mayuri-samanta/" target="_blank"
+        ><img src="Assets/icons/icons8-github.gif" alt="Github" class="socicon"
+      /></a> 
+      </div>
 
     <!-- Scroll to top -->
-    <!-- <i class="scroll-up" id="scroll-up"
+    <i class="scroll-up" id="scroll-up"
       ><img
-        src="assets/icons/icons8-upward-arrow.gif"
+        src="Assets/icons/upwardarrow.gif"
         class="socicon up-arrow"
         alt="scroll-up"
-    /></i> -->
+    /></i>
 
-    <!-- Footer section -->
-    <!-- <footer>
-      <p class="copy">&copy; Copyright 2021</p>
-      <p class="copy">
-        Built with &#x2661; by
-        <a href="https://twitter.com/koladechris" target="_blank"
-          >Kolade Chris (Ksound)</a
-        >
-      </p>
-</footer> -->
+   
 
-    <!-- Website scripts -->
+
+    <!--  Website scripts -->
   </body>
 </html>
 <script src="index.js"></script>
-<script
-  type="module"
-  src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
-></script>
-<script
-  nomodule
-  src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
-></script>
+

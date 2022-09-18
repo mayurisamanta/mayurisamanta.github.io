@@ -18,6 +18,7 @@
   --transition: 0.3s;
   --white : white;
   --bg-color : #ffebee;
+  --black : black;
 }
 /* Variables end */
 
@@ -56,6 +57,7 @@ body {
 
 nav {
     position: sticky;
+    width: 100%;
     top: 0;
     left: 0;
     z-index: 1;
@@ -67,13 +69,20 @@ nav {
     box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
     height: 100px;
   }
-
+  /* .nav__close {
+    position: absolute;
+    right: 1.3rem;
+    bottom: 0.5rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: var(--first-color);
+  } */
   nav h1 {
     color: var(--primary-color);
   }
   
   nav a {
-    color:black;
+    color: var(--black);
     transition: var(--transition);
     padding: 3px 10px;
     border-radius: 5px;
@@ -83,7 +92,7 @@ nav {
   }
 
   #logo{
-    height: 90px;
+    height: 70px;
     cursor: pointer;
   }
   nav a:hover {
@@ -92,7 +101,8 @@ nav {
     border-radius: 5px;
     background-color: var(--primary-color-light);
     padding: 7px 15px;
-    color: var(--primary-color-dark);
+    /* color: var(--primary-color-dark); */
+    color: var(--black);
     font-weight: var(--bold-font);
   }
   
@@ -120,11 +130,13 @@ nav {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 10rem;
+    gap: 5rem;
+    
     /* max-width: 68.75rem; */
-    height: 550px;
+    height: 400px;
     margin: auto;
     background-color: var(--bg-color);
+    /* background-color: white; */
     
   }
 
@@ -194,7 +206,25 @@ nav {
     99%   {color: var(--color-3)}
     100%  {color: var(--color-1)}
   }
-  
+
+   #resume{
+    padding: 10px;
+    border: 1px solid var(--primary-color-dark);
+    margin-top: 20px;
+    display: inline;
+    color: var(--primary-color-dark);
+    border-radius: 5px;
+  }
+  #resume:hover{
+    transition: var(--transition);
+    padding: 12px;
+    color: black
+  }
+ 
+  #homeextra{
+    height: 80px;
+    background-color: var(--bg-color);
+  }
   /* Here are just some visual styles. 🖌 */
   
   .container {
@@ -202,6 +232,7 @@ nav {
     /* place-items: center;   */
     /* text-align: center; */
     /* height: 100vh */
+    margin-bottom: 40px;
   }
   
   .title {
@@ -210,16 +241,28 @@ nav {
     /* font-size: 8.5vw; */
     text-transform: uppercase;
   }
+#details{
+   padding: 1rem 6rem;
+}
 
-
+#aboutextra{
+  height: 100px;
+  background-color: var(--bg-color);
+}
+#aboutextra2{
+  height: 30px;
+  background-color: var(--secondary-color-light);
+  border: 1px solid  var(--secondary-color-light);
+}
   .more-about {
     background-color: var(--secondary-color-light);
-    padding: 1rem 6rem;
+   
   }
   
   .more-about h2 {
     margin-bottom: var(--bottom-margin);
-    /* text-align: center; */
+    text-align: center;
+    padding-top: var(--bottom-margin-2);
   }
   
   .more-about p {
@@ -227,16 +270,31 @@ nav {
     padding: 0.4rem;
   }
 
+  /* Skills  */
 
+  #skillsextra{
+    height: 80px;
+    background-color: var(--bg-color);
+  }
   .skills {
-    max-width: 68.75rem;
+    /* max-width: 68.75rem; */
     margin: auto;
     text-align: center;
-    margin-top: 2.5rem;
+    /* margin-top: 2.5rem; */
+    background-color: var(--bg-color);
+   padding-bottom: 2.5rem;
   }
   
   .skill-header {
     margin-bottom: 1rem;
+  }
+  .skills-wrapper{
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(4,auto);
+    /* grid-template-rows: repeat(2,auto); */
+    margin: auto;
+    gap: 20px;
   }
   
   .skills-wrapper img {
@@ -244,35 +302,50 @@ nav {
   }
   
   .icon {
-    width: 11.875rem;
-    height: 11.25rem;
+    width: 8rem;
+    /* height: 10rem; */
   }
 
   .icon-card {
     background-color: #fff;
     border-radius: 11px;
     box-shadow: 0 3px 10px var(--secondary-color-light);
-    padding: 20px;
+    padding: 2px;
     margin: 10px;
+    /* transition: var(--transition); */
   }
+#skillextra2{
+  height: 50px;
+  background-color: var(--bg-color);
+}
+
 
   /* Project  */
-
+ #projectextra{
+  height: 60px;
+ }
   .projects {
     background-color: var(--secondary-color-light);
-    padding: 32px 0;
-    margin-top: 2rem;
+    /* padding: 32px 0; */
+    /* margin-top: 2rem; */
   }
   
   .project-pic {
-    width: 65%;
-    height: 60%;
+    /* width: 65%;
+    height: 60%; */
+    width: 100%;
   }
   
   .projects-container {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(2,auto);
+    gap: 20px;
+    margin: auto;
+    width: 90%;
+  
+    /* display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: center; */
   }
 
   .projects-title {
@@ -281,13 +354,9 @@ nav {
   }
   
   .project-container {
-    text-align: center;
-    width: 21.875rem;
+    /* text-align: center; */
+    /* width: 21.875rem; */
     padding: 1rem;
-  }
-
-  .project-container p {
-    padding: 0.4rem;
   }
   
   .project-title {
@@ -302,13 +371,43 @@ nav {
     background-color: #fff;
     border-radius: 11px;
     box-shadow: 0 3px 10px var(--primary-color-light);
-    padding: 20px;
+    padding: 40px;
     margin: 10px;
   }
 
+  #links{
+    font-size: var(--font-family);
+    color: black;
+    /* margin-right: 40px;
+    margin-left: 40px; */
+    background-color: var(--secondary-color-light);
+    border-radius: 5px;
+    padding: 5px;
+    transition: var(--transition);
+  }
+  #links:hover{
+    padding: 8px;
+  }
+  .projects-container h4{
+    margin-bottom: 10px;
+  }
+  .projects-container li{
+    font-size: 14px;
+  }
+
   /* contact */
+
+  #contactextra{
+    background-color: var(--secondary-color-light);
+    height: 60px;
+  }
+  #contactextra2{
+    background-color: var(--bg-color);
+    height: 50px;
+  }
   .contact {
-    margin-top: 2rem;
+    /* margin-top: 2rem; */
+    background-color: var(--bg-color);
   }
   
   .contact h2 {
@@ -326,7 +425,7 @@ nav {
   .contact-form-container label {
     line-height: 2.7em;
     font-weight: var(--bold-font);
-    color: var(--primary-color);
+    color: black;
   }
   
   .contact-form-container textarea {
@@ -371,22 +470,23 @@ nav {
     display: flex;
     flex-direction: column;
     position: fixed;
-    right: 1%;
-    bottom: 50%;
+    left: 1%;
+    bottom: 10%;
   }
-  
+  #social:hover{
+    
+  }
   .socicon {
     width: 2rem;
     height: 2rem;
   }
 
-  /* footer  */
-  footer {
-    background-color: var(--bg-color);
-    padding: 1.25rem;
-    text-align: center;
-    margin: 2rem 0 0;
-    display: inline-block;
+  #footer{
+    font-size: 16px;
+  }
+
+  #heart{
+    height: 20px;
   }
 
   /* Scroll up  */
@@ -401,3 +501,112 @@ nav {
     width: 3rem;
     height: 3rem;
   }
+
+
+  @media screen and (max-width: 768px) {
+    /*changes reflects on screen with a width of 720px and below*/
+    nav {
+      padding: 1.5rem 1rem;
+    }
+
+    nav ul {
+      position: fixed;
+      background-color: var(--bg-color);
+      flex-direction: column;
+      top: 86px;
+      left: 10%;
+      width: 80%;
+      text-align: center;
+      transform: translateX(120%);
+      transition: transform 0.5s ease-in;
+    }
+  
+     nav ul li {
+      margin: 8px;
+    }
+
+    .burger-menu {
+      display: block;
+    }
+  
+    nav ul.show {
+      transform: translateX(0);
+    }
+
+    .hero {
+      /* margin-top: -4rem; */
+      flex-direction: column;
+      gap: 5rem;
+      height: auto;
+    }
+  
+    .hero img {
+          height: 20rem;
+          /* width: 30rem; */
+      }
+      .hero img:hover{
+        height: 23rem;
+      }
+  
+    .bio {
+      margin-top: -4rem;
+      width: 20.5rem;
+    }
+
+    /* .more-about {
+      margin-top: 2rem;
+      padding: 1rem 3.5rem;
+    } */
+    .icon-card{
+        margin: 2px;
+    }
+    .icon-card h2{
+      font-size: 14px;
+    }
+    .icon{
+      width: 5rem;
+    }
+    .more-about h2 {
+      text-align: center;
+    }
+  
+    .more-about p {
+      text-align: justify;
+    }
+    .skills-wrapper{
+      grid-template-columns: repeat(3,auto);
+  }
+
+    /* .icon {
+      width: 5.875rem;
+      height: 5.25rem;
+    } */
+
+    .projects-container {
+      justify-content: center;
+      grid-template-columns: repeat(1,auto);
+    }
+  
+    #details{
+      padding: 0.5rem 3rem;
+    }
+  }
+
+
+  @media screen and (max-width: 420px) {
+    .hero img {
+      
+    }
+  
+    .bio {
+      width: 18.3rem;
+    }
+  
+    .project-container {
+      width: 17.875rem;
+    }
+  
+    .contact-form-container {
+      max-width: 17.75rem;
+    }
+  } 
