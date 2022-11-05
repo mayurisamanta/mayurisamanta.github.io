@@ -64,7 +64,7 @@ nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 1.5rem 3.5rem;
+    padding: 1rem 1rem;
     background-color: var(--primary-color-dark);
     box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
     height: 100px;
@@ -84,11 +84,9 @@ nav {
   nav a {
     color: var(--black);
     transition: var(--transition);
-    padding: 3px 10px;
+    padding: 1px 5px;
     border-radius: 5px;
     background-color: var(--secondary-color-light);
-    
-    
   }
 
   #logo{
@@ -100,7 +98,7 @@ nav {
     /* border-bottom: 2px solid var(--secondary-color); */
     border-radius: 5px;
     background-color: var(--primary-color-light);
-    padding: 7px 15px;
+    padding: 2px 6px;
     /* color: var(--primary-color-dark); */
     color: var(--black);
     font-weight: var(--bold-font);
