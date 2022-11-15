@@ -69,14 +69,6 @@ nav {
     box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
     height: 100px;
   }
-  /* .nav__close {
-    position: absolute;
-    right: 1.3rem;
-    bottom: 0.5rem;
-    font-size: 1.5rem;
-    cursor: pointer;
-    color: var(--first-color);
-  } */
   nav h1 {
     color: var(--primary-color);
   }
@@ -94,12 +86,9 @@ nav {
     cursor: pointer;
   }
   nav a:hover {
-    /* color: var(--secondary-color); */
-    /* border-bottom: 2px solid var(--secondary-color); */
     border-radius: 5px;
     background-color: var(--primary-color-light);
     padding: 2px 6px;
-    /* color: var(--primary-color-dark); */
     color: var(--black);
     font-weight: var(--bold-font);
   }
@@ -129,17 +118,12 @@ nav {
     align-items: center;
     justify-content: center;
     gap: 5rem;
-    
-    /* max-width: 68.75rem; */
     height: 400px;
     margin: auto;
     background-color: var(--bg-color);
-    /* background-color: white; */
-    
   }
 
   .hero img {
-    /* margin-top: 50px; */
     border-radius: 20px;
     height: 20rem;
     box-shadow: 0px 2px 15px 2px var(--primary-color-light);
@@ -227,9 +211,6 @@ nav {
   
   .container {
     display: grid;
-    /* place-items: center;   */
-    /* text-align: center; */
-    /* height: 100vh */
     margin-bottom: 40px;
   }
   
@@ -240,7 +221,19 @@ nav {
     text-transform: uppercase;
   }
 #details{
-   padding: 1rem 6rem;
+  padding: 1rem 3rem;
+  display: flex;
+  gap: 10px;
+}
+#details1{
+  margin: auto;
+}
+#details2{
+  margin: auto;
+}
+#logoimg{
+  height: 300px;
+  padding: 0.5rem;
 }
 
 #aboutextra{
@@ -324,18 +317,20 @@ nav {
 .box-container-my2{
   display: grid;
   grid-template-columns: repeat(3,auto);
-  width: 90%;
+  /* width: 90%; */
   margin: auto;
   gap: 30px;
-  justify-content: center; 
+  justify-content:center; 
   align-items: center;
   text-align: center; 
+
 }
 
 .newbox{
   position: relative;
-  width: 230px;
-  height: 260px;
+  width: 150px;
+  height: 220px;
+ 
   padding: 20px;
   /* margin: 10px; */
   
@@ -350,14 +345,14 @@ nav {
 }
 .percent{
   position: relative;
-  height: 150px;
+  height: 100px;
   /* width: 150px; */
 
 }
 .percent svg{
   position: relative;
-  width: 150px;
-  height: 150px;
+  width: 110px;
+  height: 110px;
 }
 .percent svg circle{
   /* width: 150px;
@@ -389,22 +384,22 @@ nav {
   display: flex;
   justify-content: center;
   align-items: center;
-  color: #999;
+  color: var(--black);
 }
 .percent .number h2{
-  font-size: 35px;
+  font-size: 18px;
 
 }
 .tech-heading{
   font-weight: var(--bold-font);
   /* color: #444; */
 }
-.percent .number h2 span{
-  font-size: 14px;
-}
+/* .percent .number h2 span{
+  font-size: 7px;
+} */
 .text{
   padding: 10px 0 0;
-  color: #999;
+  color: var(--black);
   font-weight: var(--bold-font);
   letter-spacing: 1p;
 
@@ -486,6 +481,22 @@ nav {
 .skills-box:hover a{
   color: #8b8a8f;
 } */
+.git--center{
+  width: 100%;
+  display: block;
+  display: flex;
+  justify-content: center;
+}
+.calendar{
+  
+}
+
+.js-calendar-graph{
+  width: 100%;
+}
+.js-calendar-graph-svg{
+  width: 100%;
+}
 
   /* Project  */
  #projectextra{
@@ -743,15 +754,16 @@ nav {
       width: 20.5rem;
     }
 
-    /* .more-about {
-      margin-top: 2rem;
-      padding: 1rem 3.5rem;
-    } */
-    /* .icon-card{
-        margin: 2px;
-        height: 160px;
-      width: 100px;
-    } */
+    #details{
+      /* padding: 1rem 6rem; */
+      display: block;
+    }
+
+    
+    
+    #logoimg{
+      height: 260px;
+    }
     .icon-card h2{
       font-size: 14px;
     }
@@ -776,7 +788,7 @@ nav {
 
     .newbox{
       width: 190px;
-      height: 260px;
+      height: 220px;
       padding: 15px;
     }
 
@@ -790,9 +802,7 @@ nav {
       grid-template-columns: repeat(1,auto);
     }
   
-    #details{
-      padding: 0.5rem 3rem;
-    }
+    
 
     #myskills .skills-box{
       width: 200px;
@@ -815,8 +825,25 @@ nav {
       max-width: 17.75rem;
     }
 
+    .newbox{
+      width: 150px;
+      height: 200px;
+  
+    }
+    #details{
+      padding :0.1rem 3rem;
+    }
+
+    #logoimg{
+      height: 180px;
+    }
+
+    .percent .number h2{
+      font-size: 16px;
+    
+    }
     .box-container-my2{
-      grid-template-columns: repeat(1,auto);
+      grid-template-columns: repeat(2,auto);
       gap: 15px;
     }
 
@@ -831,5 +858,9 @@ nav {
     }
     #myskills{
         grid-template-columns: repeat(2,1fr);
+    }
+
+    .icon-card h2{
+      font-size: 12px;
     }
   } 
