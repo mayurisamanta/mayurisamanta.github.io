@@ -173,27 +173,34 @@ body {
   }
 
 
-  /* ========== Hero section ========== */
+  /* ========== About section ========== */
 
   #details{
     padding: 1rem 3rem;
-    display: flex;
+    /* display: flex; */
     gap: 10px;
   }
 
   #details1{
     padding: 1rem 3rem;
+    display: flex;
+    justify-content: center;
+    
   }
 
   #details2{
     margin: auto;
+    width: 75%;
+    text-align: center;
+  }
+
+  #details2 p {
+    margin-bottom: 2rem;
   }
 
   #logoimg{
     height: 15rem;
     padding: 0.5rem;
-    margin-left: auto;
-    margin-right: auto;
     border-radius: 50% 0% 50% 0%;
   }
 
@@ -217,6 +224,28 @@ body {
   .more-about p {
     line-height: var(--line-height);
     padding: 0.4rem;
+  }
+
+  .about__info {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 1.5rem;
+  }
+  
+  .about__info-title {
+    /* font-size: var(--bolder-font); */
+    font-weight: var(--bolder-font);
+    color: var(--white);
+  }
+  
+  .about__info-name {
+    font-size: var(--smaller-font-size);
+  }
+  
+  .about__info-name,
+  .about__info-title {
+    display: block;
+    text-align: center;
   }
 
   /* ========== Skills Section ==========  */
