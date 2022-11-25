@@ -23,9 +23,10 @@
   </head>
 
   <body>
-    <!-- Navbar -->
-    <nav>
-      <img id="logo" src="Assets/icons/namebanner.png" alt="Name Banner" />
+
+    <!-- ========== Navbar ========== -->
+    <nav id="nav">
+      <h1> <a href="#">Mayuri</a> </h1>
       <ul class="navigation" >
         <li><a href="#" class="nav-link">Home</a></li>
         <li><a href="#about" class="nav-link">About</a></li>
@@ -42,36 +43,32 @@
       </button>
     </nav>
 
-    <!-- Hero Section -->
-    <div id="homeextra"></div>
-    <section id="home" class="hero" >
-      <img
-        src="Assets/icons/Professional Pic.jpg"
-        alt="Mayuri Samanta"
-        loading="lazy"
-        class="hero-img"
-      />
-      <div class="bio animate__animated animate__shakeX">
-        <h2 class="bio-title">Hello, My name is </h2>
-        <h1 id="heading">Mayuri Samanta</h1>
-        <div class="container">
-          <h2 class="title">
-            <span class="title-word title-word-1">I'm</span>
-            <span class="title-word title-word-2">Java</span>
-            <span class="title-word title-word-3">Backend</span>
-            <span class="title-word title-word-4">Developer</span>
-          </h2>
-          <!-- <br> -->
-          <!-- <h4>Aspiring Java Backend Developer enthusiastic to learn and explore new technologies. Strongly interested in creating impactful and scalable products.</h4> -->
-        </div>
-        <h2 id="resume">
-          <a  href="Assets/icons/Mayuri-Samanta-Resume.pdf" download="Mayuri-Samanta-Resume" onclick="window.open('https://drive.google.com/file/d/1nPPi0dv9CtOF52kNHB4yTodO2oHTyEzU/view?usp=sharing')">
-            Resume</a>
-          </h2>
-        </div>
-      </section>
 
-    <!-- More about -->
+    <!-- ========== Hero Section ==========  -->
+    <section class="header-container">
+      <img
+        class="profile-image"
+        src="Assets/icons/Professional Pic.jpg"
+        alt="Professional Pic"
+      />
+      <h1>Hi, I'm Mayuri Samanta</h1>
+
+      <div class="content-text">
+        <h3>I'm Java Backend Developer</h3>
+        <h3>
+          Always enthusiastic to learn and would love to word on new technologies.
+        </h3>
+      </div>
+      <h2 id="resume">
+        <a  href="Assets/icons/Mayuri-Samanta-Resume.pdf" 
+            download="Mayuri-Samanta-Resume" 
+            onclick="window.open('https://drive.google.com/file/d/1nPPi0dv9CtOF52kNHB4yTodO2oHTyEzU/view?usp=sharing')">
+          Resume</a>
+      </h2>
+    </section>
+
+
+    <!-- ========== About Section ========== -->
     <section class="more-about" id="about">
       <div id="aboutextra"></div>
       <h2>All About Me & My Experience</h2>
@@ -83,39 +80,32 @@
         <br>
         <div id="details2">
           <ul style="list-style-type:circle;">
-  
             <li> Hello, I am <b>Mayuri Samanta</b>. Though I am Bengali, I was born and brought up in <b>Navsari, Gujarat</b> .
             </li>
             <br>
+
             <li> I recently completed my <b>Java Backend development</b>  course from <b>Masai School</b>. 
               Also I did a <b>Bachelor of Commerce</b>  in 2021 from Veed narmad south Gujarat university and did 12th and 
-              10th from the Gujarat board in the years 2018 and 2016. With my college, I also appeared for the CA foundation in 2019. </li>
+              10th from the Gujarat board in the years 2018 and 2016. With my college, I also appeared for the CA foundation in 2019. 
+            </li>
             <br>
-            
-              <li> Aspiring <b> Java Backend Developer</b> enthusiastic to learn and explore
+
+            <li> Aspiring <b> Java Backend Developer</b> enthusiastic to learn and explore
                 new technologies. <b>1200+ hours</b>  of practical experience building
                 numerous websites and applications. Solved more than <b>500 data
                   structure</b>  questions. Strongly interested in obtaining a backend
-                developer position to create impactful and scalable products.</li>
-             <!-- <li> Apart from that I have done <b>1200+ hours of coding</b> , gone through 100+ hours to develop my soft skills 
-              and done with 9-9-6 i.e 9 am to 9 pm for 6 days of the week, military-style coding curriculum in Masai School.</li>    -->
-      
-              
-              </ul>
+                developer position to create impactful and scalable products.
+            </li>
+          </ul>
         </div>
-
-        
-
-
-        </div>
-       
+      </div>  
     </section>
     
 
-    <!-- Skills section -->
+    <!-- ========== Skills section ========== -->
 
     <section class="skills" id="skills">
-      <div id="aboutextra2"></div>
+      <div id="skillsextra1"></div>
       <div id="skillsextra"></div>
       <h2 class="skill-header">Tech Stack</h2>
 
@@ -128,53 +118,50 @@
             class="icon"
           />
           <h2>Java</h2>
-          
+        </div>
 
-          </div>
-
-          <div class=" icon-card">
-            <img
-              src="Assets/icons/hibernate.png"
-              alt="hibernate"
-              loading="lazy"
-              class="icon"
-            />
-            <h2>Hibernate</h2>
-            
-  
-            </div>
-          <div class=" icon-card">
-            <img
-              src="Assets/icons/mysql.png"
-              alt="My SQL"
-              loading="lazy"
-              class="icon"
-            />
-            <h2>My SQL</h2>
-  
-            </div>
-            <div class=" icon-card">
-              <img
-                src="Assets/icons/springboot.png"
-                alt="Spring Boot"
-                loading="lazy"
-                class="icon"
-              />
-              <h2>Spring Boot</h2>
-    
-              </div>
-            <div class=" icon-card">
-              <img
-                src="Assets/icons/js.png"
-                alt="Javascript"
-                loading="lazy"
-                class="icon"
-              />
-              <h2>Javascript</h2>
-    
-              </div>
         <div class=" icon-card">
+          <img
+            src="Assets/icons/hibernate.png"
+            alt="hibernate"
+            loading="lazy"
+            class="icon"
+          />
+          <h2>Hibernate</h2>
+        </div>
 
+        <div class=" icon-card">
+          <img
+            src="Assets/icons/mysql.png"
+            alt="My SQL"
+            loading="lazy"
+            class="icon"
+          />
+          <h2>My SQL</h2>
+        </div>
+
+        <div class=" icon-card">
+          <img
+            style="border-radius: 50%;"
+            src="Assets/icons/springboot.png"
+            alt="Spring Boot"
+            loading="lazy"
+            class="icon"
+          />
+          <h2>Spring Boot</h2>
+        </div>
+
+        <div class=" icon-card">
+          <img
+            src="Assets/icons/js.png"
+            alt="Javascript"
+            loading="lazy"
+            class="icon"
+          />
+          <h2>Javascript</h2>
+        </div>
+
+        <div class=" icon-card">
           <img
               src="Assets/icons/html.png"
               alt="HTML"
@@ -183,6 +170,7 @@
             />
             <h2>HTML</h2>
         </div>
+
         <div class=" icon-card">
           <img
             src="Assets/icons/css.png"
@@ -201,59 +189,53 @@
             class="icon"
           />
           <h2>Git & Github</h2>
-  
-          </div>
-          <div class=" icon-card">
-            <img
-              src="Assets/icons/dsa.png"
-              alt="Data Structure & Algorithm "
-              loading="lazy"
-              class="icon"
-            />
-            <h2>Data Structure</h2>
-            <h2>& Algorithm</h2>
-    
-            </div>
-            <div class=" icon-card">
-              <img
-                src="Assets/icons/vscode.png"
-                alt="VS Code"
-                loading="lazy"
-                class="icon"
-              />
-              <h2>VS Code</h2>
-              
-    
-              </div>
-              <div class=" icon-card">
-                <img
-                  src="Assets/icons/netlify.png"
-                  alt="Netlify"
-                  loading="lazy"
-                  class="icon"
-                />
-                <h2>Netlify</h2>
-                
-      
-                </div>
-                <div class=" icon-card">
-                  <img
-                    src="Assets/icons/maven.png"
-                    alt="maven"
-                    loading="lazy"
-                    class="icon"
-                  />
-                  <h2>Maven</h2>
-                  
-        
-                  </div>
-      </div>
-      </div>
+        </div>
 
-    </div>
+        <div class=" icon-card">
+          <img
+            src="Assets/icons/dsa.png"
+            alt="Data Structure & Algorithm "
+            loading="lazy"
+            class="icon"
+          />
+          <h2>DSA</h2>
+        </div>
 
-     <!-- ====================My Skills=================== -->
-     <section class="myskills" id="myskill">
+        <div class=" icon-card">
+          <img
+            src="Assets/icons/vscode.png"
+            alt="VS Code"
+            loading="lazy"
+            class="icon"
+          />
+          <h2>VS Code</h2>
+        </div>
+
+        <div class=" icon-card">
+          <img
+            style="border-radius: 50%;"
+            src="Assets/icons/netlify.png"
+            alt="Netlify"
+            loading="lazy"
+            class="icon"
+          />
+          <h2>Netlify</h2>
+        </div>
+
+        <div class=" icon-card">
+          <img
+            src="Assets/icons/maven.png"
+            alt="maven"
+            loading="lazy"
+            class="icon"
+          />
+          <h2>Maven</h2>
+        </div>
+      </div>
+    </section>
+
+     <!-- ========== My Skills ========== -->
+    <section class="myskills" id="myskill">
       <div class="heading">
           <h2 id="skillhead">Skills</h2>
       </div>
@@ -276,7 +258,7 @@
               <h3>Data-Structures Algorithms</h3>
           </div>
       </div>
-  </section>
+    </section>
 
     <h1 id="adv"> <span> My </span>Advantages  </h1>
         <div class="box-container-my2">

@@ -1,7 +1,3 @@
-document.getElementById("logo").addEventListener("click", ()=>{
-    window.location.href = "index.html";
-})
-
 // scroll to top functionality
 const scrollUp = document.querySelector("#scroll-up");
 

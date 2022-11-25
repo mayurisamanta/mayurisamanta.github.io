@@ -6,19 +6,17 @@
   --normal-font: 400;
   --bold-font: 700;
   --bolder-font: 900;
-  --primary-color: #ef5350;
-  --primary-color-light: #ff867c;
-  --primary-color-dark: #b61827;
-  --secondary-color: #e57373;
-  --secondary-color-light: #ffa4a2;
-  --secondary-color-dark: #af4448;
+  --darkbgcolor : #0e0e1b;
+  --blue : #013bb6;
+  --bg-color : #161627;
   --bottom-margin: 0.5rem;
   --bottom-margin-2: 1rem;
   --line-height: 1.7rem;
   --transition: 0.3s;
   --white : white;
-  --bg-color : #ffebee;
   --black : black;
+  --hover : #01579b;
+  --text-color : #b2dfdb;
 }
 /* Variables end */
 
@@ -39,23 +37,24 @@ ul {
 
 a {
   text-decoration: none;
-  color: var(--primary-color-light);
+  color: var(--white);
 }
 
 a:hover {
-  padding: 3px;
+  /* padding: 3px;
   background-color: var(--primary-color-light);
   border-radius: 2px;
-  color: var(--primary-color-dark);
+  color: var(--primary-color-dark); */
 }
 
 body {
   font-family: var(--font-family);
 }
 
-/* Navbar  */
 
-nav {
+/* ========== Navbar ==========  */
+
+  nav {
     position: sticky;
     width: 100%;
     top: 0;
@@ -64,33 +63,28 @@ nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 1rem 1rem;
-    background-color: var(--primary-color-dark);
+    padding: 1rem 2rem;
+    background-color: var(--darkbgcolor);
     box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
-    height: 100px;
+    height: 80px;
   }
+
   nav h1 {
-    color: var(--primary-color);
+    color: var(--white);
+    cursor: pointer;
+    font-weight: var(--normal-font);
   }
   
   nav a {
-    color: var(--black);
+    color: var(--white);
     transition: var(--transition);
     padding: 1px 5px;
     border-radius: 5px;
-    background-color: var(--secondary-color-light);
   }
 
-  #logo{
-    height: 70px;
-    cursor: pointer;
-  }
-  nav a:hover {
+  nav ul a:hover {
     border-radius: 5px;
-    background-color: var(--primary-color-light);
-    padding: 2px 6px;
-    color: var(--black);
-    font-weight: var(--bold-font);
+    background-color: var(--blue);
   }
   
   nav ul {
@@ -111,149 +105,113 @@ nav {
     display: none;
   }
 
-  /* Hero Section */
 
-  .hero {
+  /* ========== Hero Section ==========  */
+  
+  .header-container{
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 5rem;
-    height: 400px;
-    margin: auto;
+    text-align: center;
+    color: var(--text-color);
+    padding-top: 6rem;
     background-color: var(--bg-color);
   }
 
-  .hero img {
-    border-radius: 20px;
-    height: 20rem;
-    box-shadow: 0px 2px 15px 2px var(--primary-color-light);
-    transition: var(--transition);
-  }
-  .hero img:hover{
-    height: 23rem;
-  }
-  .bio {
-    width: 30rem;
-    padding: 0.625rem;
-    border-radius: 6px;
-    
-  }
-  #heading {
-    font-size: 50px;
-    color: black;
-  }
-  .bio h1 {
-    margin-bottom: var(--bottom-margin);
-  }
-  
-  .bio p {
-    line-height: var(--line-height);
-    /* padding: 0.3rem 0; */
+  .header-container h1{
+    font-size: 30px;
+    color: var(--white);
   }
 
-  .title-word {
-    animation: color-animation 4s linear infinite;
-  }
-  
-  .title-word-1 {
-    --color-1: var(--primary-color);
-    --color-2: var(--primary-color-light);
-    --color-3: var(--primary-color-dark);
-  }
-  
-  .title-word-2 {
-    --color-1: var(--secondary-color);
-    --color-2: var(--secondary-color-dark);
-    --color-3: var(--secondary-color-light);
-  }
-  
-  .title-word-3 {
-    --color-1: var(--secondary-color-dark);
-    --color-2: var(--primary-color-dark);
-    --color-3: var(--secondary-color-light);
-  }
-  
-  .title-word-4 {
-    --color-1: var(--primary-color-light);
-    --color-2: var(--primary-color);
-    --color-3: var(--primary-color-dark);
-  }
-  
-  @keyframes color-animation {
-    0%    {color: var(--color-1)}
-    32%   {color: var(--color-1)}
-    33%   {color: var(--color-2)}
-    65%   {color: var(--color-2)}
-    66%   {color: var(--color-3)}
-    99%   {color: var(--color-3)}
-    100%  {color: var(--color-1)}
+  .content-text{
+    margin-top: 1rem;
+    font-weight: var(--normal-font);
   }
 
-   #resume{
-    padding: 10px;
-    border: 1px solid var(--primary-color-dark);
-    margin-top: 20px;
+  #hero {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+
+  #resume{
+    padding: 10px 13px ;
+    border: 1px solid var(--bg-color);
+    margin-top: 2rem;
     display: inline;
-    color: var(--primary-color-dark);
-    border-radius: 5px;
+    background-color: var(--blue);
+    border-radius: 50% 0% 50% 0%;
   }
+
   #resume:hover{
     transition: var(--transition);
-    padding: 12px;
-    color: black
+    background-color: var(--hover);
   }
- 
-  #homeextra{
-    height: 80px;
+  
+  .profile-image {
+    width: 150px;
+    border-radius: 50%;
+    animation: bounce 1s infinite alternate;
+  }
+  
+  @keyframes bounce {
+    from {
+      transform: translateY(0px);
+    }
+  
+    to {
+      transform: translateY(-10px);
+    }
+  }
+  
+  .division {
+    width: 100%;
+    height: 2px;
+    background-color: var(--card-background);
+    margin: 5.5rem 0;
+  }
+
+
+  /* ========== Hero section ========== */
+
+  #details{
+    padding: 1rem 3rem;
+    display: flex;
+    gap: 10px;
+  }
+
+  #details1{
+    padding: 1rem 3rem;
+  }
+
+  #details2{
+    margin: auto;
+  }
+
+  #logoimg{
+    height: 15rem;
+    padding: 0.5rem;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 50% 0% 50% 0%;
+  }
+
+  #aboutextra{
+    height: 100px;
     background-color: var(--bg-color);
   }
-  /* Here are just some visual styles. 🖌 */
-  
-  .container {
-    display: grid;
-    margin-bottom: 40px;
-  }
-  
-  .title {
-    font-family: "Montserrat", sans-serif;
-    font-weight: 800;
-    /* font-size: 8.5vw; */
-    text-transform: uppercase;
-  }
-#details{
-  padding: 1rem 3rem;
-  display: flex;
-  gap: 10px;
-}
-#details1{
-  margin: auto;
-}
-#details2{
-  margin: auto;
-}
-#logoimg{
-  height: 300px;
-  padding: 0.5rem;
-}
 
-#aboutextra{
-  height: 100px;
-  background-color: var(--bg-color);
-}
-#aboutextra2{
-  height: 30px;
-  background-color: var(--secondary-color-light);
-  border: 1px solid  var(--secondary-color-light);
-}
   .more-about {
-    background-color: var(--secondary-color-light);
-   
+    background-color: var(--bg-color);
+    color: var(--text-color);
   }
   
   .more-about h2 {
     margin-bottom: var(--bottom-margin);
     text-align: center;
     padding-top: var(--bottom-margin-2);
+    color: var(--white);
   }
   
   .more-about p {
@@ -261,63 +219,64 @@ nav {
     padding: 0.4rem;
   }
 
-  /* Skills  */
+  /* ========== Skills Section ==========  */
+
+  #skillsextra1{
+    height: 30px;
+    background-color: var(--bg-color);
+    border: 1px solid  var(--bg-color);
+  }
 
   #skillsextra{
     height: 80px;
     background-color: var(--bg-color);
   }
+
   .skills {
-    /* max-width: 68.75rem; */
     margin: auto;
     text-align: center;
-    /* margin-top: 2.5rem; */
     background-color: var(--bg-color);
-   padding-bottom: 2.5rem;
+    padding-bottom: 2.5rem;
   }
   
   .skill-header {
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
+    color: var(--white);
   }
+
   .skills-wrapper{
-    width: 95%;
+    width: 80%;
     display: grid;
-    grid-template-columns: repeat(4,auto);
-    /* grid-template-rows: repeat(2,auto); */
+    grid-template-columns: repeat(6,1fr);
+    grid-template-rows: repeat(2,1fr);
     margin: auto;
-    /* justify-content: center;
-    gap: 30px; */
   }
   
   .skills-wrapper img {
-    padding: 1.25rem;
+    padding: 0.25rem;
+  }
+
+  .skills-wrapper h2{
+    font-size: var(--normal-font);
+    color: var(--text-color);
   }
   
   .icon {
-    width: 8rem;
-    /* height: 10rem; */
+    width: 3rem;
   }
 
   .icon-card {
-    background-color: #fff;
+    background-color: var(--bg-color);
     border-radius: 11px;
-    box-shadow: 0 3px 10px var(--secondary-color-light);
     padding: 2px;
-    margin: 10px;
-    /* height: 240px;
-    width: 160px;
-    margin: auto; */
-    /* transition: var(--transition); */
+    margin: 5px;
   }
-#skillextra2{
-  height: 50px;
-  background-color: var(--bg-color);
-}
+
+  /* ========== My Skills Section ==========  */
 
 .box-container-my2{
   display: grid;
   grid-template-columns: repeat(3,auto);
-  /* width: 90%; */
   margin: auto;
   gap: 30px;
   justify-content:center; 
@@ -330,15 +289,8 @@ nav {
   position: relative;
   width: 150px;
   height: 220px;
- 
   padding: 20px;
-  /* margin: 10px; */
-  
   border-radius: 20px;
-  /* justify-content: center; */
-  /* align-items: center; */
-  /* text-align: center; */
-  /* flex-direction: column; */
   background: #fff;
   box-shadow: 0 3px 10px var(--secondary-color-light);
 
@@ -405,10 +357,10 @@ nav {
 
 }
 
-#git ,#adv, #skillhead{
+/* #git ,#adv, #skillhead{
   margin-top: 50px;
   margin-bottom: 30px;
-}
+} */
 
 
 /* ================================Skilss Section======================================= */
@@ -417,58 +369,65 @@ nav {
   display: grid;
   grid-template-columns: repeat(210px,auto);
   /* justify-content: center; */
-  gap: 1rem;
+  /* gap: 1rem; */
   /* margin-top: 2rem; */
   width: 100%;
   margin: auto;
 }
 #myskills{
+ 
   display: grid;
-  grid-template-columns: repeat(2,minmax(200px,auto));
+  grid-template-columns: repeat(4,1fr);
   justify-content: center;
   gap: 1rem;
-  margin-top: 2rem;
+  
+  background-color: var(--bg-color);
+}
+
+#skillhead {
+  text-align: center;
+  background-color: var(--bg-color);
+  color: var(--white);
+  padding-bottom: 2rem;
 }
 #myskills .skills-box{
-  border: 1px solid;
+  
+  /* border: 1px solid; */
   /* width: 450px; */
 }
 .skills-box{
-  padding: 20px;
-  width: 350px;
+  /* padding: 20px; */
+  /* width: 350px; */
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
   border-radius: 0.5rem;
-  border-bottom: 2px solid var(--primary-color-dark);
+  /* border-bottom: 2px solid var(--white); */
   box-shadow: 0 2px 7px rgba(14, 55, 54 /15%);
 }
 
 .skills-box .fa-brands{
   padding-top:2rem;
   font-size: 54px;
-  color: var(--primary-color-dark);
+  color: var(--blue);
 }
 .skills-box .fa-sharp{
   padding-top:2rem;
   font-size: 54px;
-  color: var(--primary-color-dark);
+  color: var(--blue);
 }
 .skills-box h3{
   font-size: 1rem;
   font-weight: 600;
   margin: 0.7rem 0 0.4rem;
+  color: var(--text-color);
 }
-.skills-box a{
-  color: var(--primary-color-dark);
-  font-size: var(--p-font);
-  font-weight: 500;
-}
-/* hover */
-.skills-box:hover{
-  background-color: var(--secondary-color-light);
-}
+
+/* .skills-box:hover{
+  background-color: var(--hover);
+  color: var(--black);
+} */
 /* .skills-box:hover h3{
   color: #fff;
 }
@@ -706,6 +665,8 @@ nav {
 
   @media screen and (max-width: 768px) {
     /*changes reflects on screen with a width of 720px and below*/
+
+    /* ========== Navbar ========== */
     nav {
       padding: 1.5rem 1rem;
     }
@@ -727,6 +688,7 @@ nav {
     }
 
     .burger-menu {
+      color: var(--white);
       display: block;
     }
   
@@ -734,6 +696,8 @@ nav {
       transform: translateX(0);
     }
 
+
+    /* ========== Hero Section ========== */
     .hero {
       /* margin-top: -4rem; */
       flex-direction: column;
@@ -754,14 +718,18 @@ nav {
       width: 20.5rem;
     }
 
+
+    /* ========== About Section ========== */
+  
     #details{
       /* padding: 1rem 6rem; */
       display: block;
     }
 
     
-    
-    #logoimg{
+    /* ========== Skills Section ========== */
+
+    /* #logoimg{
       height: 260px;
     }
     .icon-card h2{
@@ -776,10 +744,11 @@ nav {
   
     .more-about p {
       text-align: justify;
-    }
+    } */
     .skills-wrapper{
-      grid-template-columns: repeat(3,auto);
-  }
+      grid-template-columns: repeat(4,1fr);
+      grid-template-rows: repeat(3,1fr);
+    }
 
     /* .icon {
       width: 5.875rem;
@@ -815,6 +784,11 @@ nav {
   
     .bio {
       width: 18.3rem;
+    }
+
+    .skills-wrapper{
+      grid-template-columns: repeat(3,1fr);
+      grid-template-rows: repeat(4,1fr);
     }
   
     .project-container {
