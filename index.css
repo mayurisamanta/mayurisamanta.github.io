@@ -396,7 +396,9 @@ body {
   #tech {
     font-weight: var(--bolder-font);
     margin-bottom: 1%;
-    margin-top: 1%;
+    margin-top: 2%;
+    width: 80%;
+    height: 35px;
   }
 
   .projects {
@@ -668,6 +670,10 @@ body {
     .img1 {
       width: 50%;
       margin-top: 2.5%;
+    }
+
+    #tech {
+      height: 25px;
     }
 
 
