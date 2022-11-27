@@ -164,13 +164,6 @@ body {
       transform: translateY(-10px);
     }
   }
-  
-  .division {
-    width: 100%;
-    height: 2px;
-    background-color: var(--card-background);
-    margin: 5.5rem 0;
-  }
 
 
   /* ========== About section ========== */
@@ -274,7 +267,7 @@ body {
   }
 
   .skills-wrapper{
-    width: 80%;
+    width: 90%;
     display: grid;
     grid-template-columns: repeat(6,1fr);
     grid-template-rows: repeat(2,1fr);
@@ -750,9 +743,8 @@ body {
 
     /* ========== About Section ========== */
   
-    #details{
-      /* padding: 1rem 6rem; */
-      display: block;
+    #details2{
+      width: 95%;
     }
 
     
