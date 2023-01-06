@@ -1,10 +1,4 @@
 # Mayuri Samanta Portfolio
-
-<h2 align="center">
-  <img src="/Assets/icons/ezgif.com-gif-maker.gif" alt="gif" width="600px" />
-  <br>
-</h2>
-
 # Features
 
 - User can connect in different platforms
@@ -20,6 +14,13 @@
 - JavaScript
 - Vs code
 - Git & GitHub
+
+# Overview
+
+<h2 align="center">
+  <img src="/Assets/icons/Portfolio" alt="portfolio" width="600px" />
+  <br>
+</h2>
 
 # Author
 
