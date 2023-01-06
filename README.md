@@ -18,7 +18,7 @@
 # Overview
 
 <h2 align="center">
-  <img src="/Assets/icons/Portfolio" alt="portfolio" width="600px" />
+  <img src="https://github.com/mayurisamanta/mayurisamanta.github.io/blob/main/Assets/icons/portfolio.png?raw=true" alt="portfolio" width="600px" />
   <br>
 </h2>
 
