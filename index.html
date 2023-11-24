@@ -1,443 +1,358 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
 
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    
-    <!-- Style sheet  -->
-    <link rel="stylesheet" href="index.css" />
+<head>
 
-    <!-- Github calendar -->
-    <link rel="stylesheet" href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css"/>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- icon CDN link -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@2.1.2/css/boxicons.min.css">
-    
-    <!-- Tab style  -->
-    <link rel="icon" href="Assets/icons/logo.png" />
-    <title>Mayuri Samanta | Java Backend Developer</title>
+  <!-- Style sheet  -->
+  <link rel="stylesheet" href="index.css" />
 
-  </head>
+  <!-- Github calendar -->
+  <link rel="stylesheet" href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css" />
 
-  <body>
+  <!-- icon CDN link -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@2.1.2/css/boxicons.min.css">
 
-    <!-- ========== Navbar ========== -->
-    <nav id="nav">
-      <h1> <a href="#">Mayuri</a> </h1>
-      <ul class="navigation" >
-        <li><a href="#" class="nav-link">Home</a></li>
-        <li><a href="#about" class="nav-link">About</a></li>
-        <li><a href="#skills" class="nav-link">Skills</a></li>
-        <li><a href="#projects" class="nav-link">Projects</a></li>
-        <li><a href="#contact" class="nav-link">Contact</a></li>
-        <li><a href="Assets/icons/Mayuri-Samanta-Resume.pdf" download="Mayuri-Samanta-Resume"  onclick="window.open('https://drive.google.com/drive/folders/1znQl-Cs_oianWXsvC2bJtKlZpnpqHZqV?usp=sharing')">
+  <!-- Tab style  -->
+  <link rel="icon" href="Assets/icons/logo.png" />
+  <title>Mayuri Samanta | Java Backend Developer</title>
+
+</head>
+
+<body>
+
+  <!-- ========== Navbar ========== -->
+  <nav id="nav">
+    <h1> <a href="#">Mayuri</a> </h1>
+    <ul class="navigation">
+      <li><a href="#" class="nav-link">Home</a></li>
+      <li><a href="#about" class="nav-link">About</a></li>
+      <li><a href="#skills" class="nav-link">Skills</a></li>
+      <li><a href="#projects" class="nav-link">Projects</a></li>
+      <li><a href="#contact" class="nav-link">Contact</a></li>
+      <li><a href="Assets/icons/Mayuri-Samanta-Resume.pdf" download="Mayuri-Samanta-Resume"
+          onclick="window.open('https://drive.google.com/drive/folders/1znQl-Cs_oianWXsvC2bJtKlZpnpqHZqV?usp=sharing')">
           Resume</a></li>
-      </ul>
+    </ul>
 
-      <!-- Burger menu  -->
-      <button class="burger-menu" id="burger-menu">
-        <ion-icon class="bars" name="menu-outline"></ion-icon>
-      </button>
-    </nav>
+    <!-- Burger menu  -->
+    <button class="burger-menu" id="burger-menu">
+      <ion-icon class="bars" name="menu-outline"></ion-icon>
+    </button>
+  </nav>
 
 
-    <!-- ========== Hero Section ==========  -->
-    <section class="header-container">
-      <img
-        class="profile-image"
-        src="Assets/icons/Professional Pic.jpg"
-        alt="Professional Pic"
-      />
-      <h1>Hi, I'm Mayuri Samanta</h1>
+  <!-- ========== Hero Section ==========  -->
+  <section class="header-container">
+    <img class="profile-image" src="Assets/icons/Professional Pic.jpg" alt="Professional Pic" />
+    <h1>Hi, I'm Mayuri Samanta</h1>
 
-      <div class="content-text">
-        <h3>I'm Java Backend Developer</h3>
-        <h3>
-          Always enthusiastic to learn and would love to work on new technologies.
-        </h3>
+    <div class="content-text">
+      <h3>I'm Java Backend Developer</h3>
+      <h3>
+        Always enthusiastic to learn and would love to work on new technologies.
+      </h3>
+    </div>
+    <h2 id="resume">
+      <a href="Assets/icons/Mayuri-Samanta-Resume.pdf" download="Mayuri-Samanta-Resume"
+        onclick="window.open('https://drive.google.com/drive/folders/1znQl-Cs_oianWXsvC2bJtKlZpnpqHZqV?usp=sharing')">
+        Resume</a>
+    </h2>
+  </section>
+
+
+  <!-- ========== About Section ========== -->
+  <section class="more-about" id="about">
+    <div id="aboutextra"></div>
+    <h2>All About Me</h2>
+    <div id="details">
+
+      <div id="details1">
+        <img id="logoimg" src="https://miro.medium.com/max/1400/1*qdAW1TjCN57h1lbuuzvchg.gif" alt="">
       </div>
-      <h2 id="resume">
-        <a  href="Assets/icons/Mayuri-Samanta-Resume.pdf" 
-            download="Mayuri-Samanta-Resume" 
-            onclick="window.open('https://drive.google.com/drive/folders/1znQl-Cs_oianWXsvC2bJtKlZpnpqHZqV?usp=sharing')">
-          Resume</a>
-      </h2>
-    </section>
+      <br>
+      <div id="details2">
+        <p>Aspiring <b> Java Backend Developer</b> enthusiastic to learn and explore
+          new technologies. <b>1200+ hours</b> of practical experience building
+          numerous websites and applications. Solved more than <b>500 data
+            structure</b> questions. Strongly interested in obtaining a backend
+          developer position to create impactful and scalable products.</p>
 
+        <div class="about__info">
+          <div>
+            <span class="about__info-title">1200+ hrs</span>
+            <span class="about__info-name">Coding
+          </div>
 
-    <!-- ========== About Section ========== -->
-    <section class="more-about" id="about">
-      <div id="aboutextra"></div>
-      <h2>All About Me</h2>
-      <div id="details">
+          <div>
+            <span class="about__info-title">700+ Que</span>
+            <span class="about__info-name">DSA
+          </div>
 
-        <div id="details1">
-          <img  id="logoimg" src="https://miro.medium.com/max/1400/1*qdAW1TjCN57h1lbuuzvchg.gif" alt="">
+          <div>
+            <span class="about__info-title">100+ hrs</span>
+            <span class="about__info-name">Soft Skills
+          </div>
+
         </div>
-        <br>
-        <div id="details2">
-          <p>Aspiring <b> Java Backend Developer</b> enthusiastic to learn and explore
-            new technologies. <b>1200+ hours</b>  of practical experience building
-            numerous websites and applications. Solved more than <b>500 data
-              structure</b>  questions. Strongly interested in obtaining a backend
-            developer position to create impactful and scalable products.</p>
+        <div class="about__info">
+          <div>
+            <span class="about__info-title">500+</span>
+            <span class="about__info-name">
+              Git <br />
+              Commits</span>
+          </div>
 
-            <div class="about__info">
-              <div>
-                <span class="about__info-title">1200+ hrs</span>
-                <span class="about__info-name">Coding
-              </div>
+          <div>
+            <span class="about__info-title">3+</span>
+            <span class="about__info-name">Collaborative <br />
+              Projects</span>
+          </div>
 
-              <div>
-                <span class="about__info-title">700+ Que</span>
-                <span class="about__info-name"
-                  >DSA
-              </div>
+          <div>
+            <span class="about__info-title">5+</span>
+            <span class="about__info-name">Individual<br />Projects</span>
+          </div>
 
-              <div>
-                <span class="about__info-title">100+ hrs</span>
-                <span class="about__info-name">Soft Skills
-              </div>
-
-            </div>
-            <div class="about__info">
-              <div>
-                <span class="about__info-title">500+</span>
-                <span class="about__info-name">
-                  Git <br />
-                  Commits</span
-                >
-              </div>
-
-              <div>
-                <span class="about__info-title">3+</span>
-                <span class="about__info-name"
-                  >Collaborative <br />
-                  Projects</span
-                >
-              </div>
-
-              <div>
-                <span class="about__info-title">5+</span>
-                <span class="about__info-name">Individual<br />Projects</span>
-              </div>
-
-            </div>
-        </div>
-      </div>  
-    </section>
-    
-
-    <!-- ========== Skills section ========== -->
-
-    <section class="skills" id="skills">
-      <div id="skillsextra1"></div>
-      <div id="skillsextra"></div>
-      <h2 class="skill-header">Tech Stack</h2>
-
-      <div class="skills-wrapper">
-        <div class=" icon-card">
-          <img
-            src="Assets/icons/java.png"
-            alt="Java"
-            loading="lazy"
-            class="icon"
-          />
-          <h2>Java</h2>
-        </div>
-
-        <div class=" icon-card">
-          <img
-            src="Assets/icons/hibernate.png"
-            alt="hibernate"
-            loading="lazy"
-            class="icon"
-          />
-          <h2>Hibernate</h2>
-        </div>
-
-        <div class=" icon-card">
-          <img
-            src="Assets/icons/mysql.png"
-            alt="My SQL"
-            loading="lazy"
-            class="icon"
-          />
-          <h2>My SQL</h2>
-        </div>
-
-        <div class=" icon-card">
-          <img
-            style="border-radius: 50%;"
-            src="Assets/icons/springboot.png"
-            alt="Spring Boot"
-            loading="lazy"
-            class="icon"
-          />
-          <h2>Spring Boot</h2>
-        </div>
-
-        <div class=" icon-card">
-          <img
-            src="Assets/icons/aws.png"
-            alt="AWS"
-            loading="lazy"
-            class="icon"
-          />
-          <h2>AWS</h2>
-        </div>
-
-        <div class=" icon-card">
-          <img
-            src="Assets/icons/maven.png"
-            alt="maven"
-            loading="lazy"
-            class="icon"
-          />
-          <h2>Maven</h2>
-        </div>
-
-        <div class=" icon-card">
-          <img
-            src="Assets/icons/js.png"
-            alt="Javascript"
-            loading="lazy"
-            class="icon"
-          />
-          <h2>Javascript</h2>
-        </div>
-
-        <div class=" icon-card">
-          <img
-              src="Assets/icons/html.png"
-              alt="HTML"
-              loading="lazy"
-              class="icon"
-            />
-            <h2>HTML</h2>
-        </div>
-
-        <div class=" icon-card">
-          <img
-            src="Assets/icons/css.png"
-            alt="CSS"
-            loading="lazy"
-            class="icon"
-          />
-          <h2>CSS</h2>
-        </div>
-
-        <div class=" icon-card">
-          <img
-            src="Assets/icons/Bootstrap.png"
-            alt="Bootstrap"
-            loading="lazy"
-            class="icon"
-          />
-          <h2>Bootstrap</h2>
-        </div>
-
-        <div class=" icon-card">
-          <img
-            src="Assets/icons/Swagger.png"
-            alt="Swagger"
-            loading="lazy"
-            class="icon"
-          />
-          <h2>Swagger</h2>
-        </div>
-
-        <div class=" icon-card">
-          <img
-            src="Assets/icons/lombok.png"
-            alt="lombok"
-            loading="lazy"
-            class="icon"
-          />
-          <h2>Lombok</h2>
-        </div>
-
-        <div class=" icon-card">
-          <img
-            src="Assets/icons/restful.png"
-            alt="RESTful API"
-            loading="lazy"
-            class="icon"
-          />
-          <h2>RESTful API</h2>
-        </div>
-
-        <div class=" icon-card">
-          <img
-            src="Assets/icons/dsa.png"
-            alt="Data Structure & Algorithm "
-            loading="lazy"
-            class="icon"
-          />
-          <h2>DSA</h2>
-        </div>
-          
-        <div class=" icon-card">
-          <img
-            src="Assets/icons/git.png"
-            alt="Git & Github"
-            loading="lazy"
-            class="icon"
-          />
-          <h2>Git & Github</h2>
-        </div>
-
-        <div class=" icon-card">
-          <img
-            src="Assets/icons/eclipse.png"
-            alt="Eclipse"
-            loading="lazy"
-            class="icon"
-          />
-          <h2>Eclipse</h2>
-        </div>
-
-        <div class=" icon-card">
-          <img
-            src="Assets/icons/vscode.png"
-            alt="VS Code"
-            loading="lazy"
-            class="icon"
-          />
-          <h2>VS Code</h2>
-        </div>
-
-        <div class=" icon-card">
-          <img
-            style="border-radius: 50%;"
-            src="Assets/icons/netlify.png"
-            alt="Netlify"
-            loading="lazy"
-            class="icon"
-          />
-          <h2>Netlify</h2>
-        </div>
-
-        
-      </div>
-    </section>
-
-
-    <!-- ========== GitHub ========== -->
-      
-    <section id="gitSection">
-      <h2 >My Github Contribution</h2>
-      <div class="git--center">
-        <div class="calendar"> 
-          <!-- Loading stuff -->
-          Loading the data just for you.
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
 
-    <!-- ========== Project Section ========== -->
-    <section class="projects" id="projects">
-      <div id="projectextra"></div>
+  <!-- ========== Skills section ========== -->
 
-      <h2 class="projects-title">Some of my Recent Projects</h2>
+  <section class="skills" id="skills">
+    <div id="skillsextra1"></div>
+    <div id="skillsextra"></div>
+    <h2 class="skill-header">Tech Stack</h2>
 
-      <div id="container-1">
-        <img class="img1" src="./Assets/icons/bus.jpg">
+    <div class="skills-wrapper">
+      <div class=" icon-card">
+        <img src="Assets/icons/java.png" alt="Java" loading="lazy" class="icon" />
+        <h2>Java</h2>
+      </div>
+
+      <div class=" icon-card">
+        <img src="Assets/icons/hibernate.png" alt="hibernate" loading="lazy" class="icon" />
+        <h2>Hibernate</h2>
+      </div>
+
+      <div class=" icon-card">
+        <img src="Assets/icons/mysql.png" alt="My SQL" loading="lazy" class="icon" />
+        <h2>My SQL</h2>
+      </div>
+
+      <div class=" icon-card">
+        <img style="border-radius: 50%;" src="Assets/icons/springboot.png" alt="Spring Boot" loading="lazy"
+          class="icon" />
+        <h2>Spring Boot</h2>
+      </div>
+
+      <div class=" icon-card">
+        <img src="Assets/icons/aws.png" alt="AWS" loading="lazy" class="icon" />
+        <h2>AWS</h2>
+      </div>
+
+      <div class=" icon-card">
+        <img src="Assets/icons/maven.png" alt="maven" loading="lazy" class="icon" />
+        <h2>Maven</h2>
+      </div>
+
+      <div class=" icon-card">
+        <img src="Assets/icons/js.png" alt="Javascript" loading="lazy" class="icon" />
+        <h2>Javascript</h2>
+      </div>
+
+      <div class=" icon-card">
+        <img src="Assets/icons/html.png" alt="HTML" loading="lazy" class="icon" />
+        <h2>HTML</h2>
+      </div>
+
+      <div class=" icon-card">
+        <img src="Assets/icons/css.png" alt="CSS" loading="lazy" class="icon" />
+        <h2>CSS</h2>
+      </div>
+
+      <div class=" icon-card">
+        <img src="Assets/icons/Bootstrap.png" alt="Bootstrap" loading="lazy" class="icon" />
+        <h2>Bootstrap</h2>
+      </div>
+
+      <div class=" icon-card">
+        <img src="Assets/icons/Swagger.png" alt="Swagger" loading="lazy" class="icon" />
+        <h2>Swagger</h2>
+      </div>
+
+      <div class=" icon-card">
+        <img src="Assets/icons/lombok.png" alt="lombok" loading="lazy" class="icon" />
+        <h2>Lombok</h2>
+      </div>
+
+      <div class=" icon-card">
+        <img src="Assets/icons/restful.png" alt="RESTful API" loading="lazy" class="icon" />
+        <h2>RESTful API</h2>
+      </div>
+
+      <div class=" icon-card">
+        <img src="Assets/icons/dsa.png" alt="Data Structure & Algorithm " loading="lazy" class="icon" />
+        <h2>DSA</h2>
+      </div>
+
+      <div class=" icon-card">
+        <img src="Assets/icons/git.png" alt="Git & Github" loading="lazy" class="icon" />
+        <h2>Git & Github</h2>
+      </div>
+
+      <div class=" icon-card">
+        <img src="Assets/icons/eclipse.png" alt="Eclipse" loading="lazy" class="icon" />
+        <h2>Eclipse</h2>
+      </div>
+
+      <div class=" icon-card">
+        <img src="Assets/icons/vscode.png" alt="VS Code" loading="lazy" class="icon" />
+        <h2>VS Code</h2>
+      </div>
+
+      <div class=" icon-card">
+        <img style="border-radius: 50%;" src="Assets/icons/netlify.png" alt="Netlify" loading="lazy" class="icon" />
+        <h2>Netlify</h2>
+      </div>
+
+
+    </div>
+  </section>
+
+
+  <!-- ========== GitHub ========== -->
+
+  <section id="gitSection">
+    <h2>My Github Contribution</h2>
+    <div class="git--center">
+      <div class="calendar">
+        <!-- Loading stuff -->
+        Loading the data just for you.
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ========== Project Section ========== -->
+  <section class="projects" id="projects">
+    <div id="projectextra"></div>
+
+    <h2 class="projects-title">Some of my Recent Projects</h2>
+
+    <div id="container-1">
+      <img class="img1" src="./Assets/icons/bus.jpg">
 
       <div class="glass">
         <h3 id="parahead">Bus Ticket Reservation System</h3>
-          <div id="para">
-            <p>The main objective of this project is to cater the needs of the passenger who are traveling from one point to another. This project have contains essential modules like Customer and Administrator. User can book / reserved his ticket one day before. </p>
-            <img id="tech" src="https://skillicons.dev/icons?i=java,mysql,eclipse,git" alt="">
-            
-          </div>
-          <a id="links" href="https://github.com/mayurisamanta/zealous-price-4318" target="_blank" class="project-link">Code</a>
-          <a id="links" href="https://drive.google.com/drive/u/0/folders/1GWxkRfTGjiaVNXp2u027kYXcTbvZf1z8" target="_blank" class="project-link">Video</a>
+        <div id="para">
+          <p>The main objective of this project is to cater the needs of the passenger who are traveling from one point
+            to another. This project have contains essential modules like Customer and Administrator. User can book /
+            reserved his ticket one day before. </p>
+          <img id="tech" src="https://skillicons.dev/icons?i=java,mysql,eclipse,git" alt="">
+
+        </div>
+        <a id="links" href="https://github.com/mayurisamanta/zealous-price-4318" target="_blank"
+          class="project-link">Code</a>
+        <a id="links" href="https://drive.google.com/drive/u/0/folders/1GWxkRfTGjiaVNXp2u027kYXcTbvZf1z8"
+          target="_blank" class="project-link">Video</a>
       </div>
     </div>
 
-      <div id="container-1">
-          <img class="img1" src="./Assets/icons/masaiTravels.jpg">
+    <div id="container-1">
+      <img class="img1" src="./Assets/icons/masaiTravels.jpg">
 
-        <div class="glass">
-          <h3 id="parahead">Masai Travels</h3>
-            <div id="para">
-              <p>Masai Travels is a java application designed to provide customers with a personalized easy-to-utilize user experience for booking and purchasing tickets online. </p>
-              <img id="tech" src="https://skillicons.dev/icons?i=java,hibernate,spring,mysql,maven,eclipse,git" alt="">
-              
-            </div>
-            <a id="links" href="https://github.com/mayurisamanta/bright-thrill-6240" target="_blank" class="project-link">Code</a>
-            <a id="links" href="https://drive.google.com/drive/u/0/folders/1tQn3oJP_2FBNzV-GOHlN1JWGx-RyNB2f" target="_blank" class="project-link">Video</a>
+      <div class="glass">
+        <h3 id="parahead">Masai Travels</h3>
+        <div id="para">
+          <p>Masai Travels is a java application designed to provide customers with a personalized easy-to-utilize user
+            experience for booking and purchasing tickets online. </p>
+          <img id="tech" src="https://skillicons.dev/icons?i=java,hibernate,spring,mysql,maven,eclipse,git" alt="">
+
         </div>
+        <a id="links" href="https://github.com/mayurisamanta/bright-thrill-6240" target="_blank"
+          class="project-link">Code</a>
+        <a id="links" href="https://drive.google.com/drive/u/0/folders/1tQn3oJP_2FBNzV-GOHlN1JWGx-RyNB2f"
+          target="_blank" class="project-link">Video</a>
       </div>
+    </div>
 
-      <div id="container-1">
-        <img class="img1" src="Assets/icons/airship.jpg">
+    <div id="container-1">
+      <img class="img1" src="Assets/icons/airship.jpg">
 
       <div class="glass">
         <h3 id="parahead">Airship Clone </h3>
-          <div id="para">
-            <p>Airship (formerly Urban Airship) is an American company that provides marketing and branding services. Airship allows companies to generate custom messages to consumers via push notifications, SMS messaging, and similar, and provides customer analytics services.</p>
-            <img id="tech" src="https://skillicons.dev/icons?i=js,html,css,git,netlify,vscode" alt="">
-          </div>
-          <a id="links" href="https://github.com/mayurisamanta/Airship" target="_blank" class="project-link">Code</a>
-          <a id="links" href="https://cool-cascaron-6523af.netlify.app/" target="_blank" class="project-link">Live</a>
+        <div id="para">
+          <p>Airship (formerly Urban Airship) is an American company that provides marketing and branding services.
+            Airship allows companies to generate custom messages to consumers via push notifications, SMS messaging, and
+            similar, and provides customer analytics services.</p>
+          <img id="tech" src="https://skillicons.dev/icons?i=js,html,css,git,netlify,vscode" alt="">
+        </div>
+        <a id="links" href="https://github.com/mayurisamanta/Airship" target="_blank" class="project-link">Code</a>
+        <a id="links" href="https://cool-cascaron-6523af.netlify.app/" target="_blank" class="project-link">Live</a>
       </div>
     </div>
 
     <div id="container-1">
       <img class="img1" src="Assets/icons/bestbuy.jpg">
 
-    <div class="glass">
-      <h3 id="parahead">BestBuy Clone </h3>
+      <div class="glass">
+        <h3 id="parahead">BestBuy Clone </h3>
         <div id="para">
-          <p>Best Buy is a provider of consumer technology products and services. The Company offers a range of merchandise and services to its customers, including computing and mobile phones, consumer electronics, appliances, entertainment and other products.</p>
+          <p>Best Buy is a provider of consumer technology products and services. The Company offers a range of
+            merchandise and services to its customers, including computing and mobile phones, consumer electronics,
+            appliances, entertainment and other products.</p>
           <img id="tech" src="https://skillicons.dev/icons?i=js,html,css,git,netlify,vscode" alt="">
         </div>
         <a id="links" href="https://github.com/mayurisamanta/Best-Buyers" target="_blank" class="project-link">Code</a>
         <a id="links" href="https://bestbuy-in.netlify.app/" target="_blank" class="project-link">Live</a>
+      </div>
     </div>
-  </div>
 
   </section>
 
-    <!-- Contact section -->
+  <!-- Contact section -->
   <section class="contact" id="contact">
-      <div id="contactextra"></div>
-      
-      <div id="contactextra2"></div>
+    <div id="contactextra"></div>
 
-      <h2>Contact</h2>
-      <p>Get In Touch With Me</p>
+    <div id="contactextra2"></div>
+
+    <h2>Contact</h2>
+    <p>Get In Touch With Me</p>
 
     <div id="contactsec">
 
 
-        <div class="information">
-          <!-- box1 -->
-          <div class="info-box">
-              <i class="bx bxs-user"></i>
-              <span>Mayuri Samanta</span>
-          </div>
-          <!-- box2 -->
-          <div class="info-box">
-              <i class="bx bxs-phone"></i>
-              <span><a href="tel:+919265353136"> +91 9265353136</a></span>
-          </div>
-          <!-- box3 -->
-          <div class="info-box">
-              <i class="bx bxs-envelope"></i>
-              <span> <a href="mailto: samantamayuri@gmail.com"> samantamayuri@gmail.com</a></span>
-          </div>
-          <!-- box 4 -->
-          <div class="info-box">
-              <i class="bx bxs-map"></i>
-              <span> Navsari, Gujarat</span>
-          </div>
+      <div class="information">
+        <!-- box1 -->
+        <div class="info-box">
+          <i class="bx bxs-user"></i>
+          <span>Mayuri Samanta</span>
+        </div>
+        <!-- box2 -->
+        <div class="info-box">
+          <i class="bx bxs-phone"></i>
+          <span><a href="tel:+919265353136"> +91 9265353136</a></span>
+        </div>
+        <!-- box3 -->
+        <div class="info-box">
+          <i class="bx bxs-envelope"></i>
+          <span> <a href="mailto: samantamayuri@gmail.com"> samantamayuri@gmail.com</a></span>
+        </div>
+        <!-- box 4 -->
+        <div class="info-box">
+          <i class="bx bxs-map"></i>
+          <span> Navsari, Gujarat</span>
+        </div>
       </div>
 
 
@@ -446,117 +361,68 @@
           <form action="https://formspree.io/f/mpznpoyl" method="POST">
             <div class="form-control">
               <label for="name">Name</label>
-              <input
-                type="text"
-                id="name"
-                name="sender-name"
-                placeholder="Enter Your Name"
-                class="input-field"
-                required
-              />
+              <input type="text" id="name" name="sender-name" placeholder="Enter Your Name" class="input-field"
+                required />
             </div>
             <div class="form-control">
               <label for="email">Email</label>
-              <input
-                type="email"
-                id="email"
-                name="sender-email"
-                placeholder="Enter Your Email"
-                class="input-field"
-                required
-              />
+              <input type="email" id="email" name="sender-email" placeholder="Enter Your Email" class="input-field"
+                required />
             </div>
             <div class="form-control">
               <label for="number">Number</label>
-              <input
-                type="number"
-                id="number"
-                name="sender-number"
-                placeholder="Enter Your Number"
-                class="input-field"
-              />
+              <input type="number" id="number" name="sender-number" placeholder="Enter Your Number"
+                class="input-field" />
             </div>
             <div class="form-control">
               <label for="message">Message</label>
-              <textarea
-                id="message"
-                cols="60"
-                rows="10"
-                placeholder="Enter Your Message"
-                name="message"
-                class="input-field"
-                required
-              ></textarea>
+              <textarea id="message" cols="60" rows="10" placeholder="Enter Your Message" name="message"
+                class="input-field" required></textarea>
             </div>
             <h2>
 
-              <input
-                type="submit"
-                value="Submit"
-                id="submit-btn"
-                class="submit-btn"
-              />
+              <input type="submit" value="Submit" id="submit-btn" class="submit-btn" />
             </h2>
           </form>
         </div>
       </div>
 
     </div>
-    <h2 id="footer">Made by Mayuri Samanta  </h2>
+    <h2 id="footer">Made by Mayuri Samanta </h2>
 
-   
+
   </section>
 
 
-    <div class="socials">
-      <a href = "mailto:samantamayuri@gmail.com">
-        <img
-          src="Assets/icons/email.gif"
-          alt="Email"
-          loading="lazy"
-          class="socicon"
-      />
-        </a>
-        
-        <a href = "tel:9265353136">
-          <img
-            src="Assets/icons/call.gif"
-            alt="Phone"
-            loading="lazy"
-            class="socicon"
-        />
-          </a>
-      <a id="social" href="https://www.linkedin.com/in/mayuri-samanta/" target="_blank"
-        ><img
-          src="Assets/icons/icons8-linkedin-circled.gif"
-          alt="Linkedin"
-          loading="lazy"
-          class="socicon"
-      /></a>
-      <a id="social" href="https://github.com/mayurisamanta" target="_blank"
-        ><img src="Assets/icons/icons8-github.gif" alt="Github" class="socicon"
-      /></a> 
-      </div>
+  <div class="socials">
+    <a href="mailto:samantamayuri@gmail.com">
+      <img src="Assets/icons/email.gif" alt="Email" loading="lazy" class="socicon" />
+    </a>
 
-    <!-- Scroll to top -->
-    <i class="scroll-up" id="scroll-up"
-      ><img
-        src="Assets/icons/upwardarrow.gif"
-        class="socicon up-arrow"
-        alt="scroll-up"
-    /></i>
+    <a href="tel:9265353136">
+      <img src="Assets/icons/call.gif" alt="Phone" loading="lazy" class="socicon" />
+    </a>
+    <a id="social" href="https://www.linkedin.com/in/mayuri-samanta/" target="_blank"><img
+        src="Assets/icons/icons8-linkedin-circled.gif" alt="Linkedin" loading="lazy" class="socicon" /></a>
+    <a id="social" href="https://github.com/mayurisamanta" target="_blank"><img src="Assets/icons/icons8-github.gif"
+        alt="Github" class="socicon" /></a>
+  </div>
 
-   
+  <!-- Scroll to top -->
+  <i class="scroll-up" id="scroll-up"><img src="Assets/icons/upwardarrow.gif" class="socicon up-arrow"
+      alt="scroll-up" /></i>
 
 
-    <!--  Website scripts -->
-  </body>
+
+
+  <!--  Website scripts -->
+</body>
+
 </html>
 <script src="index.js"></script>
 <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule="" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-<script
-  src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js">
+<script src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js">
 </script>
 
 <script>
@@ -567,9 +433,8 @@
 
   // Use a proxy
   GitHubCalendar(".calendar", "mayurisamanta", {
-     proxy (mayurisamanta) {
-       return fetch(`https://your-proxy.com/github?user=${mayurisamanta}`)
-     }
+    proxy(mayurisamanta) {
+      return fetch(`https://your-proxy.com/github?user=${mayurisamanta}`)
+    }
   }).then(r => r.text())
 </script>
-
