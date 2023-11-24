@@ -675,6 +675,12 @@ nav ul li {
 
 @media screen and (max-width: 420px) {
 
+  /* ========== Hero Section ==========  */
+
+  .profile-image {
+    width: 130px;
+  }
+
   /* ========== About Section ========== */
 
   #details {
