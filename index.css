@@ -296,39 +296,23 @@ nav ul li {
 
 /* ========== GitHub ==========  */
 
-#gitSection {
+.github-section {
   background-color: var(--bg-color);
   color: var(--white);
 }
 
-#gitSection h2 {
+.github-section h2 {
   color: var(--white);
   text-align: center;
   padding-top: 2rem;
   padding-bottom: 2rem;
 }
 
-.git--center {
-  display: flex;
-}
-
-.position-relative {
-  font-family: var(--font-family);
-}
-
-.git--center .calendar {
-  border-radius: 5px;
-  border: none;
-  font-family: var(--font-family);
-  color: var(--text-color);
-}
-
-.git--center .contrib-number {
-  color: var(--white);
-}
-
-.git--center .ContributionCalendar-label {
-  fill: var(--text-color);
+.github-section img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
 }
 
 
@@ -634,12 +618,8 @@ nav ul li {
 
   /* ========== GitHub ========== */
 
-  .js-calendar-graph-svg {
-    width: 90%;
-  }
-
-  .git--center .calendar {
-    width: 90%;
+  .github-section img {
+    width: 85%;
   }
 
 

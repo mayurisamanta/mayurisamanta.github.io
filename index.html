@@ -10,15 +10,6 @@
   <!-- Style sheet  -->
   <link rel="stylesheet" href="index.css" />
 
-  <!-- Github calendar -->
-  <link rel="stylesheet" href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css" />
-
-  <!-- icon CDN link -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
-    integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@2.1.2/css/boxicons.min.css">
-
   <!-- Tab style  -->
   <link rel="icon" href="Assets/icons/logo.png" />
   <title>Mayuri Samanta | Java Backend Developer</title>
@@ -229,19 +220,14 @@
     </div>
   </section>
 
-
   <!-- ========== GitHub ========== -->
 
-  <section id="gitSection">
+  <section class="github-section">
     <h2>My Github Contribution</h2>
-    <div class="git--center">
-      <div class="calendar">
-        <!-- Loading stuff -->
-        Loading the data just for you.
-      </div>
-    </div>
+    <img
+      src="https://raw.githubusercontent.com/mayurisamanta/mayurisamanta/main/profile-3d-contrib/profile-night-rainbow.svg"
+      alt="profile-3d-contrib">
   </section>
-
 
   <!-- ========== Project Section ========== -->
   <section class="projects" id="projects">
@@ -415,26 +401,11 @@
 
 
 
-  <!--  Website scripts -->
+  
 </body>
 
 </html>
+
+<!-- ========== Website scripts ==========  -->
+
 <script src="index.js"></script>
-<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-<script nomodule="" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-<script src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js">
-</script>
-
-<script>
-  GitHubCalendar(".calendar", "mayurisamanta");
-
-  // or enable responsive functionality:
-  GitHubCalendar(".calendar", "mayurisamanta", { responsive: true });
-
-  // Use a proxy
-  GitHubCalendar(".calendar", "mayurisamanta", {
-    proxy(mayurisamanta) {
-      return fetch(`https://your-proxy.com/github?user=${mayurisamanta}`)
-    }
-  }).then(r => r.text())
-</script>
