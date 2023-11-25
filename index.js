@@ -9,7 +9,7 @@ scrollUp.addEventListener("click", () => {
   });
 });
 
-// Nav hamburgerburger selections
+// hamburgerburger selections
 
 const burger = document.querySelector("#burger-menu");
 const ul = document.querySelector("nav ul");

@@ -566,6 +566,8 @@ nav ul li {
     margin: 8px;
   }
 
+  /* Hamburger menu */
+
   .burger-menu {
     color: var(--white);
     display: block;
@@ -573,6 +575,7 @@ nav ul li {
 
   nav ul.show {
     transform: translateX(0);
+    background-color: rgba(0, 0, 0, 0.5);
   }
 
 
